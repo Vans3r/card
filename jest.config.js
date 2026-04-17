@@ -6,4 +6,4 @@ const config = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs'],
 };
 
-export default config;
+module.exports = config;

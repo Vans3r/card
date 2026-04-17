@@ -15,7 +15,7 @@ jobs:
           node-version: '16'
       - run: npm ci
       - run: npm test
-      - run: npx webpack
+      - run: npm build
 
   deploy:
     needs: test

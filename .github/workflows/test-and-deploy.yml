@@ -25,20 +25,6 @@ jobs:
 
       - name: Build project
         run: npm run build
-        env:
-          CI: true
-
-      - name: Run linting (optional)
-        run: npm run lint || echo "Linting skipped"
-
-      - name: Clear Jest cache
-        run: npx jest --clearCache
 
       - name: Run tests
-        run: npm test -- --experimental-vm-modules
-
-      - name: Test results
-        if: always()
-        run: |
-          echo "Build and test completed"
-          ls -la dist/  
+        run: npm test

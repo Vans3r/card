@@ -1,0 +1,1 @@
+![Build Status](https://github.com/Vans3r/card/actions/workflows/test-and-deploy.yml/badge.svg)
